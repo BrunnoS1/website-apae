@@ -15,7 +15,7 @@ sendGridMail.setApiKey(process.env.SENDGRID_API_KEY);
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'arog1003',
+    password: '123456',
     database: 'APAEDoacoes'
 });
 
@@ -210,8 +210,6 @@ app.post('/atualizar-senha', (req, res) => {
 
     // Checando se email bate com usuário já cadastrado
     const query = 'SELECT * FROM users WHERE email = ?';
-    console.log(usuario);
-    console.log(senha);
     connection.query(query, [usuario, senha], (err, results) => {
         if (err) {
             console.log("erro procurando email");
