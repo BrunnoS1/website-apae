@@ -15,7 +15,7 @@ sendGridMail.setApiKey(process.env.SENDGRID_API_KEY);
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '123456',
+    password: 'arog1003',
     database: 'APAEDoacoes'
 });
 
